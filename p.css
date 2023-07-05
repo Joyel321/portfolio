@@ -62,8 +62,8 @@ body{
 .home-img img{
     max-width: 450px;
     max-height: 450px;
-    border-radius: 1%;
-    box-shadow: 30px 30px 0px #0ef;
+    border-radius: 10%;
+    box-shadow: 0 0 30px #0ef;
     opacity: 0;
     animation: zoomIn 1s ease forwards, floatImage 4s;
     animation-delay: 2s, 3s;
@@ -127,16 +127,29 @@ body{
     animation-delay: calc(.2s * var(--i));
 }
 
-.social-media a:hover{
-    background: #0ef;
+.social-media a:nth-child(1):hover{
+    background: white;
+    color: #1e60d8;
+    box-shadow: 0 0 20px #0ef;
+}
+
+.social-media a:nth-child(2):hover{
+    background: rgb(243, 121, 204);
     color: #1f242d;
     box-shadow: 0 0 20px #0ef;
 }
 
-.linkedin a:hover{
-    background: #55f;
+.social-media a:nth-child(3):hover{
+    background: blue;
+    color: #1f242d;
+    box-shadow: 0 0 20px #0ef;
 }
 
+.social-media a:nth-child(4):hover{
+    background: skyblue;
+    color: #1f242d;
+    box-shadow: 0 0 20px #0ef;
+}
 .btn{
     display: inline-block;
     padding: 12px 20px;
@@ -227,3 +240,105 @@ body{
     }
 }
 
+
+.about{
+    background: #1f242d;
+}
+
+.about h4{
+    text-align: center;
+    font-size: 22px;
+}
+
+.about h2{
+    font-size: 45px;
+    text-align: center;
+    padding-top: 18px;
+}
+
+.about p{
+    padding-block: 13px;
+    padding-inline: 50px;
+    letter-spacing: 2px;
+    font-size: 19px;
+}
+
+.my-skills{
+    background:rgb(124, 123, 121);
+}
+
+.skills h2{
+    text-align: center;
+    font-size: 20px;
+    color: black;
+}
+
+.skills h1{
+    color: #0ef;
+    text-align: center;
+    margin-top: 40px;
+    font-size: 45px;
+}
+
+.table a{
+    font-size: 90px;
+    margin-left: 50px;  
+}
+
+.table a .fa-html5{
+    color: orange;
+}
+
+.fa-css3-alt{
+    color: skyblue;
+}
+
+.fa-js-square{
+    color: yellow;
+}
+
+.table tr,td{
+    padding-block: 50px;
+}
+
+.table h4{
+    font-size: 30px;
+    background-color: transparent;
+    text-align: center;
+    transition: .6s ease-in;
+}
+
+.table h4:hover{
+    transform: scale(.9);
+    color: red;
+    border-radius: 20px;
+}
+
+.contact{
+    text-align: center;
+    font-weight: 45px;
+}
+
+form{
+    display: flex;
+    flex-direction: column;
+}
+
+form input,label,textarea{
+    width: 400px;
+    margin-left: 40%;  
+    background: transparent; 
+    border-color: #0ef;
+    border-inline: none;
+    border-top: none;
+}
+
+form #butn{
+    margin-left: 84%;
+    width: 90px;
+    color: #1e60d8;
+    background-color: #0ef;
+    height: 40px;
+    margin-top: 15px;
+    border-radius: 12px;
+}
