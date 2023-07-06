@@ -21,11 +21,12 @@ body{
     justify-content: space-between;
     align-items: center;
     z-index: 100;
+    background-color: #0ef;
 }
 
 .logo{
     font-size: 25px;
-    color:#fff ;
+    color:#ed4848 ;
     text-decoration: none;
     font-weight: 600;
     cursor: default;
@@ -46,7 +47,7 @@ body{
 }
 
 .navbar a:hover{
-    color: #0ef;
+    color: rgb(255, 98, 0);
 }
 
 .home{
@@ -314,31 +315,43 @@ body{
     border-radius: 20px;
 }
 
-.contact{
+.contact h2{
     text-align: center;
-    font-weight: 45px;
+    font-size: 40px;
+    margin-top: 50px;
 }
 
 form{
     display: flex;
     flex-direction: column;
+    margin-top: 150px;
+    justify-content: center;
+    align-items: center;
 }
 
-form input,label,textarea{
+form input,textarea{
     width: 400px;
-    margin-left: 40%;  
+    justify-content: center;
+    align-items: center;
     background: transparent; 
     border-color: #0ef;
     border-inline: none;
     border-top: none;
+    padding-block: 15px;
 }
-
-form #butn{
-    margin-left: 84%;
+form button {
+    display: flex;
+    justify-content: center;
+    align-items: center;
     width: 90px;
-    color: #1e60d8;
     background-color: #0ef;
     height: 40px;
-    margin-top: 15px;
+    margin: 15px auto 0; /* Add 'auto' to the left and right margins */
     border-radius: 12px;
-}
+  }
+
+  .contact p{
+    text-align: center;
+    padding-block: 20px;
+  }
+  
